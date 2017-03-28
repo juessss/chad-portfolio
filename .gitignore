@@ -1,0 +1,11 @@
+.DS_STORE
+*.log
+
+node_modules
+
+dist
+coverage
+config/development.config.js
+config/production.config.js
+
+.idea/
