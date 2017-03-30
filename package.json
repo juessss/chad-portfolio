@@ -9,9 +9,9 @@
     "start": "brunch watch --server",
     "build": "brunch build --production"
   },
-  "dependencies": {},
+  "dependencies": {
+  },
   "devDependencies": {
-    "auto-reload-brunch": "^2.7.1",
     "autoprefixer": "^6.3",
     "babel-brunch": "^6.1.1",
     "babel-preset-env": "^1.2.2",
@@ -22,6 +22,8 @@
     "csswring": "^5.1",
     "postcss-brunch": "^2.0",
     "typescript-brunch": "^2.3.0",
-    "uglify-js-brunch": "^2"
+    "uglify-js-brunch": "^2",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
   }
 }
