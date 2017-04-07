@@ -9,8 +9,7 @@
     "start": "brunch watch --server",
     "build": "brunch build --production"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^6.3",
     "babel-brunch": "^6.1.1",
@@ -21,9 +20,11 @@
     "clean-css-brunch": "^2",
     "csswring": "^5.1",
     "postcss-brunch": "^2.0",
-    "typescript-brunch": "^2.3.0",
-    "uglify-js-brunch": "^2",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-addons-css-transition-group": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-router-dom": "^4.0.0",
+    "react-transition-group": "^1.1.1",
+    "uglify-js-brunch": "^2"
   }
 }

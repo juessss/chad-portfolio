@@ -9,10 +9,6 @@ exports.files = {
   stylesheets: {joinTo: 'app.css'}
 };
 
-exports.plugins = {
-  babel: {presets: ['latest']}
-};
-
 exports.server = {
   port: 8080,
   stripSlashes: true,
@@ -27,7 +23,7 @@ exports.plugins = {
     ]
   },
   babel: {
-    presets: ['env', 'react'],
+    presets: ['latest', 'env', 'react'],
     ignore: [
       /^node_modules/
     ]
