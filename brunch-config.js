@@ -27,5 +27,8 @@ exports.plugins = {
     ignore: [
       /^node_modules/
     ]
+  },
+  sass: {
+    mode: 'ruby'
   }
 }

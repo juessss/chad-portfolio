@@ -7,28 +7,14 @@ import {
   Link
 } from 'react-router-dom';
 
-import WorkTile from './domain/work/entities/WorkTile.js';
-
-const WorkPage = () => {
-  return (
-    <div>
-     <CSSTransitionGroup
-       transitionName="example"
-       transitionAppear={true}
-       transitionEnterTimeout={500}
-       transitionLeaveTimeout={300}>
-      <div>Home Page</div> 
-    </CSSTransitionGroup>
-    </div>
-     
-  );
-}
+import ProjectsRoute from './src/Framework/ReactRoutes/Projects';
 
 const AboutPage = () => {
   return (<div>
      <CSSTransitionGroup
        transitionName="example"
        transitionAppear={true}
+       transitionAppearTimeout={500}
        transitionEnterTimeout={500}
        transitionLeaveTimeout={300}>
       <div>ABout Page</div> 
@@ -43,6 +29,7 @@ const ContactPage = () => {
      <CSSTransitionGroup
        transitionName="example"
        transitionAppear={true}
+       transitionAppearTimeout={500}
        transitionEnterTimeout={500}
        transitionLeaveTimeout={300}>
       <div>Contact Page</div> 
@@ -59,14 +46,14 @@ class App extends Component {
       <Router>
           <div>
             <ul>
-              <li><Link to="/">Home</Link></li>
+              <li><Link to="/">Projects</Link></li>
               <li><Link to="/about">About</Link></li>
               <li><Link to="/contact">Contact</Link></li>
             </ul>
       
             <hr/>
             
-            <Route key="home" exact path="/" component={WorkPage}/>
+            <Route key="home" exact path="/" component={ProjectsRoute}/>
             <Route key="about" exact path="/About" component={AboutPage}/>
             <Route key="contact" exact path="/Contact" component={ContactPage}/>
             
