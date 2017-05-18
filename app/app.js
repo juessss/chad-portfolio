@@ -8,35 +8,8 @@ import {
 } from 'react-router-dom';
 
 import ProjectsRoute from './src/Framework/ReactRoutes/Projects';
-
-const AboutPage = () => {
-  return (<div>
-     <CSSTransitionGroup
-       transitionName="example"
-       transitionAppear={true}
-       transitionAppearTimeout={500}
-       transitionEnterTimeout={500}
-       transitionLeaveTimeout={300}>
-      <div>ABout Page</div> 
-    </CSSTransitionGroup>
-    </div>
-  )
-}
-
-const ContactPage = () => {
-  return (
-    <div>
-     <CSSTransitionGroup
-       transitionName="example"
-       transitionAppear={true}
-       transitionAppearTimeout={500}
-       transitionEnterTimeout={500}
-       transitionLeaveTimeout={300}>
-      <div>Contact Page</div> 
-    </CSSTransitionGroup>
-    </div>
-  )
-}
+import AboutPage from './src/Framework/ReactRoutes/About';
+import ContactPage from './src/Framework/ReactRoutes/Contact';
 
 class App extends Component {
   
@@ -45,11 +18,25 @@ class App extends Component {
     return (
       <Router>
           <div>
-            <ul>
-              <li><Link to="/">Projects</Link></li>
-              <li><Link to="/about">About</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
-            </ul>
+            
+            <div className="l-branding">
+                logo
+            </div>
+            
+            <header className="navigation">
+                <div className="navigation__hamburger">
+                  <div className="hamburger">
+                    <div className="hamburger__bar"></div>
+                  </div>
+                </div>
+                <div className="navigation__menu">
+                  <ul className="menu">
+                    <li className="menu__item"><Link to="/">Projects</Link></li>
+                    <li className="menu__item"><Link to="/about">About</Link></li>
+                    <li className="menu__item"><Link to="/contact">Contact</Link></li>
+                  </ul>
+                </div>
+            </header>
       
             <hr/>
             

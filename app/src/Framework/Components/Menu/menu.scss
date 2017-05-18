@@ -1,0 +1,16 @@
+.menu {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    margin: 0;
+    
+    &__item {
+        
+    }
+    
+    &__link {
+        color: white;
+    }
+}
