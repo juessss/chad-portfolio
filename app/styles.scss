@@ -5,6 +5,11 @@
 @import './src/Framework/Components/Navigation/navigation.scss';
 @import './src/Framework/Components/Menu/menu.scss';
 
+body {
+  background-color: grey;
+  font-family: sans-serif;
+}
+
 .example-enter {
   opacity: 0.01;
   transition: opacity .5s ease-in;

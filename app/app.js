@@ -31,9 +31,15 @@ class App extends Component {
                 </div>
                 <div className="navigation__menu">
                   <ul className="menu">
-                    <li className="menu__item"><Link to="/">Projects</Link></li>
-                    <li className="menu__item"><Link to="/about">About</Link></li>
-                    <li className="menu__item"><Link to="/contact">Contact</Link></li>
+                    <li className="menu__item">
+                      <Link className="menu__link" to="/">Projects</Link>
+                    </li>
+                    <li className="menu__item">
+                      <Link className="menu__link" to="/about">About</Link>
+                    </li>
+                    <li className="menu__item">
+                      <Link className="menu__link" to="/contact">Contact</Link>
+                    </li>
                   </ul>
                 </div>
             </header>

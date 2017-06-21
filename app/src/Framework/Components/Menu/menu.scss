@@ -1,3 +1,5 @@
+@import '../../../Style/rules/breakpoints';
+
 .menu {
     background: black;
     display: flex;
@@ -12,5 +14,17 @@
     
     &__link {
         color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        
+        &:hover {
+            color: grey;
+            transition: color 600ms;
+        }
+    }
+    
+    @media (min-width: $medium) {
+        align-items: center;
+        flex-direction: row;
     }
 }
