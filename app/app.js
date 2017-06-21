@@ -10,6 +10,7 @@ import {
 import ProjectsRoute from './src/Framework/ReactRoutes/Projects';
 import AboutPage from './src/Framework/ReactRoutes/About';
 import ContactPage from './src/Framework/ReactRoutes/Contact';
+import Navigation from './src/Framework/Components/Navigation';
 
 class App extends Component {
   
@@ -23,26 +24,7 @@ class App extends Component {
                 logo
             </div>
             
-            <header className="navigation">
-                <div className="navigation__hamburger">
-                  <div className="hamburger">
-                    <div className="hamburger__bar"></div>
-                  </div>
-                </div>
-                <div className="navigation__menu">
-                  <ul className="menu">
-                    <li className="menu__item">
-                      <Link className="menu__link" to="/">Projects</Link>
-                    </li>
-                    <li className="menu__item">
-                      <Link className="menu__link" to="/about">About</Link>
-                    </li>
-                    <li className="menu__item">
-                      <Link className="menu__link" to="/contact">Contact</Link>
-                    </li>
-                  </ul>
-                </div>
-            </header>
+            <Navigation></Navigation>
       
             <hr/>
             
