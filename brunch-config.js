@@ -23,11 +23,16 @@ exports.plugins = {
     ]
   },
   babel: {
-    presets: ['latest', 'env', 'react'],
+    presets: [
+      'latest',
+      'stage-0', 
+      'react'
+    ],
     ignore: [
       /^node_modules/
     ]
   },
+  
   sass: {
     mode: 'ruby'
   }
