@@ -1,0 +1,21 @@
+.project {
+    position: relative;
+    width: 100%;
+    
+    &__image {
+        height: 100%;
+        left: 0;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    
+    &__title {
+        position: relative;
+    }
+    
+    &__subtitle {
+        position: relative;
+    }
+}
