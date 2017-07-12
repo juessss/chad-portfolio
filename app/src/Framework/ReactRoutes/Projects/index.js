@@ -26,15 +26,17 @@ class ProjectsRoute extends Component {
            transitionEnterTimeout={500}
            transitionLeaveTimeout={300}>
             
-            <div className="work-Item">
-                <img className="work-Item__Image" src="http://unsplash.it/300/300" />
-                <h2 className="work-Item__Title">
-                    Work Item
-                </h2>
-                <div className="work-Item__SubTitle">
-                    Client name
-                </div>
-            </div> 
+            {this.state.work.map((item, index) => {
+                return <div key={index} className="work-Item">
+                    <img className="work-Item__Image" src="http://unsplash.it/300/300" />
+                    <h2 className="work-Item__Title">
+                        Work Item
+                    </h2>
+                    <div className="work-Item__SubTitle">
+                        Client name
+                    </div>
+                </div> 
+            })}
         </CSSTransitionGroup>
     </div>   );
     }
