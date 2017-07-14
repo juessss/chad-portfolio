@@ -1,5 +1,7 @@
 @import './src/Style/global/base.scss';
 @import './src/Style/rules/breakpoints.scss';
+@import './src/Style/rules/vertical-rhythm.scss';
+@import "./src/Style/rules/spacing";
 @import './src/Framework/Components/Hamburger/Hamburger.scss';
 @import './src/Framework/Components/Navigation/navigation.scss';
 @import './src/Framework/Components/Menu/menu.scss';
@@ -34,4 +36,15 @@ body {
 
 .example-appear.example-appear-active {
   opacity: 1;
+}
+
+.logo {
+  left: $gutter-small;
+  position: absolute;
+  top: $baseline * 2;
+  z-index: 2;
+  
+  @media (min-width: $medium) {
+    left: $gutter-medium;
+  }
 }

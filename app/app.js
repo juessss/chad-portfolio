@@ -20,7 +20,7 @@ class App extends Component {
       <Router>
           <div>
             
-            <div className="l-branding">
+            <div className="logo">
                 logo
             </div>
             

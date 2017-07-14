@@ -9,11 +9,15 @@ exports.files = {
   stylesheets: {joinTo: 'app.css'}
 };
 
+
+
 exports.server = {
   port: 8080,
   stripSlashes: true,
-  hostname: '0.0.0.0'
+  hostname: '0.0.0.0',
 }
+
+exports.notifications = false;
 
 exports.plugins = {
   postcss: {

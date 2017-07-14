@@ -2,6 +2,7 @@
 @import "../../../Style/rules/colors";
 @import "../../../Style/rules/typography";
 @import "../../../Style/rules/vertical-rhythm";
+@import "../../../Style/rules/spacing";
 
 .project {
     background-color: $black;
@@ -10,8 +11,8 @@
     flex-direction: column;
     justify-content: flex-end;
     padding-bottom: $baseline * 3;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: $gutter-small;
+    padding-right: $gutter-small;
     position: relative;
     width: 100%;
     
@@ -47,8 +48,8 @@
     }
     
     @media (min-width: $medium) {
-        padding-left: 3rem;
-        padding-right: 3rem;
+        padding-left: $gutter-medium;
+        padding-right: $gutter-medium;
         
         &__title {
             font-size: $font-size-large;
@@ -63,9 +64,15 @@
     }
     
     @media (min-width: $large) {
+        padding-bottom: $baseline * 5;
+        
         &__title {
             line-height: line-height($font-size-xlarge);
             font-size: $font-size-xlarge;
         }
+    }
+    
+    @media (min-width: $x-large) {
+        padding-right: 8rem;
     }
 }
