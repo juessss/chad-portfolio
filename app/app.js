@@ -25,8 +25,6 @@ class App extends Component {
             </div>
             
             <Navigation></Navigation>
-      
-            <hr/>
             
             <Route key="home" exact path="/" component={ProjectsRoute}/>
             <Route key="about" exact path="/About" component={AboutPage}/>

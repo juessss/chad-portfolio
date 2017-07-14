@@ -1,0 +1,27 @@
+@import 'vertical-rhythm';
+
+$font-size-xxlarge: $baseline * 3.4;
+$font-size-xlarge: $baseline * 2.8;
+$font-size-large: $baseline * 2.2;
+$font-size-medium: $baseline * 1.77;
+$font-size-small: $baseline * 1.3;
+$font-size-xsmall: $baseline * 1;
+$font-size-xxsmall: $baseline * .8;
+
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
+}
+
+@function line-height($font-size) {
+    @for $i from 1 to 8 {
+      $baseline-unit: strip-units($baseline);
+      $prev-line-height: ($i - 1) * $baseline-unit;
+      $line-height: $i * $baseline-unit;
+      $font-size-unit: strip-units($font-size);
+      
+      @if $font-size-unit > $prev-line-height and $font-size-unit < $line-height {
+        @return $baseline * $i;
+      }
+    }
+    @return $font-size;
+}

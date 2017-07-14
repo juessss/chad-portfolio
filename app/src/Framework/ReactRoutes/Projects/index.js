@@ -34,9 +34,12 @@ class ProjectsRoute extends Component {
                             <h2 className="project__title">
                                 Work Item
                             </h2>
-                            <div className="project__subtitle">
+                            <p className="project__blurb">
+                                A little mini description describing the project
+                            </p>
+                            <span className="project__subtitle">
                                 Client name
-                            </div>
+                            </span>
                         </div>
                     </div>
                 })}
