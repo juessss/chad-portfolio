@@ -1,3 +1,6 @@
+import React from 'react';
+import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
+
 const AboutPage = () => {
   return (<div>
      <CSSTransitionGroup

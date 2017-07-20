@@ -10,6 +10,7 @@ import {
 import ProjectsRoute from './src/Framework/ReactRoutes/Projects';
 import AboutPage from './src/Framework/ReactRoutes/About';
 import ContactPage from './src/Framework/ReactRoutes/Contact';
+import Project from './src/Framework/ReactRoutes/Projects/project.js';
 import Navigation from './src/Framework/Components/Navigation';
 
 class App extends Component {
@@ -29,6 +30,7 @@ class App extends Component {
             <Route key="home" exact path="/" component={ProjectsRoute}/>
             <Route key="about" exact path="/About" component={AboutPage}/>
             <Route key="contact" exact path="/Contact" component={ContactPage}/>
+            <Route key="project" exact path="/project/:id" component={Project}/>
             
           </div>
       </Router>
