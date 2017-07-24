@@ -1,78 +1,78 @@
 import React, { Component } from 'react';
+import Hero from '../../Components/Hero/hero.js';
+import ImageGallery from '../../Components/Image-Gallery/imagegallery.js';
 
 const Project = () => {
     return (
       <div>
-        <div className="hero">
-          <img className="hero__image" src="http://unsplash.it/2000/2000?image=937" />
-          <h1 className="hero__title">Hero title goes here</h1>
-        </div>
+
+        <Hero></Hero>
         
-        <div className="summary">
-          <div className="summary__lead">
+        <div className="prj-summary">
+          <div className="prj-summary__lead">
             Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
           </div>
-          <ul className="summary__meta">
-            <li className="summary__meta-item">
-              <h2 className="summary__meta-title">Title</h2>
-              <p className="summary__meta-text">Text</p>
+          <ul className="prj-summary__meta">
+            <li className="prj-summary__meta-item">
+              <h2 className="prj-summary__meta-title">Title</h2>
+              <p className="prj-summary__meta-text">Text</p>
             </li>
             
-            <li className="summary__meta-item">
-              <h2 className="summary__meta-title">Title</h2>
-              <p className="summary__meta-text">Text</p>
+            <li className="prj-summary__meta-item">
+              <h2 className="prj-summary__meta-title">Title</h2>
+              <p className="prj-summary__meta-text">Text</p>
             </li>
             
-            <li className="summary__meta-item">
-              <h2 className="summary__meta-title">Title</h2>
-              <p className="summary__meta-text">Text</p>
+            <li className="prj-summary__meta-item">
+              <h2 className="prj-summary__meta-title">Title</h2>
+              <p className="prj-summary__meta-text">Text</p>
             </li>
           </ul>
         </div>
         
-        <div className="minimal-info">
-          <div className="minimal-info__text">
+        <div className="prj-minimal-info">
+          <div className="prj-minimal-info__text">
             Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
           </div>
-          <div className="minimal-info__main-image-wrapper">
-            <img className="minimal-info__image" src="http://unsplash.it/800/800?image=937" />
+          <div className="prj-minimal-info__main-image-wrapper">
+            <img className="prj-minimal-info__image" src="http://unsplash.it/800/800?image=937" />
           </div>
-          <div className="minimal-info__small-image-wrapper">
-            <img className="minimal-info__image" src="http://unsplash.it/800/800?image=937" />
+          <div className="prj-minimal-info__small-image-wrapper">
+            <img className="prj-minimal-info__image" src="http://unsplash.it/800/800?image=937" />
           </div>
         </div>
-      
-        <div className="typography">
-          <div className="typography__item">
-            <h3 className="typography__item-header">
+
+        <div className="prj-typography">
+          <div className="prj-typography__item">
+            <h3 className="prj-typography__item-header">
               Heading
             </h3>
-            <span className="typography__item-sub-header">
+            <span className="prj-typography__item-sub-header">
               Roboto
             </span>
-            <div className="typography__item-example">
+            <div className="prj-typography__item-example">
               Image goes here
             </div>
           </div>
-          <div className="typography__item">
-            <h3 className="typography__item-header">
+          <div className="prj-typography__item">
+            <h3 className="prj-typography__item-header">
               Heading
             </h3>
-            <span className="typography__item-sub-header">
+            <span className="prj-typography__item-sub-header">
               Roboto
             </span>
-            <div className="typography__item-example">
+            <div className="prj-typography__item-example">
               Image goes here
             </div>
           </div>
-          <div className="typography__item">
-            <h3 className="typography__item-header">
+          <div className="prj-typography__item">
+            <h3 className="prj-typography__item-header">
               Heading
             </h3>
-            <span className="typography__item-sub-header">
+            <span className="prj-typography__item-sub-header">
               Roboto
             </span>
-            <div className="typography__item-example">
+            <div className="prj-typography__item-example">
               Image goes here
             </div>
           </div>
@@ -112,51 +112,23 @@ const Project = () => {
           </div>
         </div>
       
-        <div className="hero">
-          <img className="hero__image" src="http://unsplash.it/2000/2000?image=939" />
-        </div>
+        <Hero></Hero>
         
-        <div className="minimal-info">
-          <div className="minimal-info__text">
+        <div className="prj-minimal-info">
+          <div className="prj-minimal-info__text">
             Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
           </div>
-          <div className="minimal-info__main-image-wrapper">
-            <img className="minimal-info__image" src="http://unsplash.it/800/800?image=937" />
+          <div className="prj-minimal-info__main-image-wrapper">
+            <img className="prj-minimal-info__image" src="http://unsplash.it/800/800?image=937" />
           </div>
-          <div className="minimal-info__small-image-wrapper">
-            <img className="minimal-info__image" src="http://unsplash.it/800/800?image=937" />
+          <div className="prj-minimal-info__small-image-wrapper">
+            <img className="prj-minimal-info__image" src="http://unsplash.it/800/800?image=937" />
           </div>
         </div>
         
-        <div className="image-gallery">
-          <div className="image-gallery__item">
-            <img className="minimal-info__image" src="http://unsplash.it/800/800?image=777" />
-          </div>
-          <div className="image-gallery__item">
-            <img className="minimal-info__image" src="http://unsplash.it/800/800?image=777" />
-          </div>
-          <div className="image-gallery__item">
-            <img className="minimal-info__image" src="http://unsplash.it/800/800?image=777" />
-          </div>
-          <div className="image-gallery__item">
-            <img className="minimal-info__image" src="http://unsplash.it/800/800?image=777" />
-          </div>
-          <div className="image-gallery__item">
-            <img className="minimal-info__image" src="http://unsplash.it/800/800?image=777" />
-          </div>
-          <div className="image-gallery__item">
-            <img className="minimal-info__image" src="http://unsplash.it/800/800?image=777" />
-          </div>
-          <div className="image-gallery__item">
-            <img className="minimal-info__image" src="http://unsplash.it/800/800?image=777" />
-          </div>
-          <div className="image-gallery__item">
-            <img className="minimal-info__image" src="http://unsplash.it/800/800?image=777" />
-          </div>
-          <div className="image-gallery__item">
-            <img className="minimal-info__image" src="http://unsplash.it/800/800?image=777" />
-          </div>
-        </div>
+        <ImageGallery></ImageGallery>
+        
+        <Hero></Hero>
       </div>
     );
 }
