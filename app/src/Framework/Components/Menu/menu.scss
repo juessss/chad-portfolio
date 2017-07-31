@@ -1,28 +1,28 @@
-@import '../../../Style/rules/breakpoints';
+@import "../../../Style/rules/index";
 
 .menu {
-    background: black;
+    background: $black;
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: space-around;
     margin: 0;
-    
+
     &__item {
-        
+
     }
-    
+
     &__link {
         color: white;
         text-decoration: none;
         text-transform: uppercase;
-        
+
         &:hover {
             color: grey;
             transition: color 600ms;
         }
     }
-    
+
     @media (min-width: $medium) {
         align-items: center;
         flex-direction: row;

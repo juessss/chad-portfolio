@@ -7,10 +7,10 @@ import {
   Link
 } from 'react-router-dom';
 
-import ProjectsRoute from './src/Framework/ReactRoutes/Projects';
+import ProjectsRoute from './src/Framework/ReactRoutes/Home';
 import AboutPage from './src/Framework/ReactRoutes/About';
 import ContactPage from './src/Framework/ReactRoutes/Contact';
-import Project from './src/Framework/ReactRoutes/Projects/project.js';
+import Project from './src/Framework/ReactRoutes/Home/project.js';
 import Navigation from './src/Framework/Components/Navigation';
 
 class App extends Component {
@@ -19,7 +19,7 @@ class App extends Component {
 
     return (
       <Router>
-          <div>
+          <div className="page">
 
             <Link to="">
                 <div className="logo">

@@ -4,9 +4,9 @@
 @import "../../../Style/rules/spacing";
 
 .hero {
-    height: 125vh;
+    height: 100vh;
     position: relative;
-    
+
     &__image {
         height: 100%;
         left: 0;
@@ -15,23 +15,26 @@
         top: 0;
         width: 100%;
     }
-    
+
     &__title {
-        bottom: 35vh;
+        bottom: 5rem;
         color: $white;
         font-size: $font-size-large;
         left: $gutter-small;
         position: absolute;
         right: $gutter-small;
     }
-    
+
     @media only screen and (min-width: $medium) {
+        height: 125vh;
+
         &__title {
+            bottom: 35vh;
             max-width: 60rem;
             font-size: $font-size-xxxlarge;
         }
     }
-    
+
     @media only screen and (min-width: $large) {
         &__title {
             font-size: $font-size-super;

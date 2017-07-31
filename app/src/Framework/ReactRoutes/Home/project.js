@@ -7,29 +7,31 @@ const Project = () => {
       <div>
 
         <Hero></Hero>
-        
+
         <div className="prj-summary">
           <div className="prj-summary__lead">
-            Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
+            <span className="prj-summary__lead-text">
+                Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
+            </span>
           </div>
           <ul className="prj-summary__meta">
             <li className="prj-summary__meta-item">
-              <h2 className="prj-summary__meta-title">Title</h2>
-              <p className="prj-summary__meta-text">Text</p>
+              <h2 className="prj-summary__meta-title">Awards & Titles</h2>
+              <p className="prj-summary__meta-text">ABC, EFG, LMNOP</p>
             </li>
-            
+
             <li className="prj-summary__meta-item">
-              <h2 className="prj-summary__meta-title">Title</h2>
-              <p className="prj-summary__meta-text">Text</p>
+              <h2 className="prj-summary__meta-title">Shoutouts</h2>
+              <p className="prj-summary__meta-text">Tom, John and Luke</p>
             </li>
-            
+
             <li className="prj-summary__meta-item">
-              <h2 className="prj-summary__meta-title">Title</h2>
-              <p className="prj-summary__meta-text">Text</p>
+              <h2 className="prj-summary__meta-title">Visit Client</h2>
+              <p className="prj-summary__meta-text">www.abc.com</p>
             </li>
           </ul>
         </div>
-        
+
         <div className="prj-minimal-info">
           <div className="prj-minimal-info__text">
             Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
@@ -77,7 +79,7 @@ const Project = () => {
             </div>
           </div>
         </div>
-          
+
         <div className="palette-section">
           <div className="palette-section__blurb">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
@@ -111,9 +113,9 @@ const Project = () => {
             </ul>
           </div>
         </div>
-      
+
         <Hero></Hero>
-        
+
         <div className="prj-minimal-info">
           <div className="prj-minimal-info__text">
             Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
@@ -125,9 +127,9 @@ const Project = () => {
             <img className="prj-minimal-info__image" src="http://unsplash.it/800/800?image=937" />
           </div>
         </div>
-        
+
         <ImageGallery></ImageGallery>
-        
+
         <Hero></Hero>
       </div>
     );
