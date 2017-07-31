@@ -34,13 +34,18 @@ const Project = () => {
 
         <div className="prj-minimal-info">
           <div className="prj-minimal-info__text">
-            Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
+            <div className="prj-minimal-info__text-title">
+                Contextual
+            </div>
+            <div className="prj-minimal-info__text-content">
+                Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
+            </div>
           </div>
           <div className="prj-minimal-info__main-image-wrapper">
             <img className="prj-minimal-info__image" src="http://unsplash.it/800/800?image=937" />
           </div>
           <div className="prj-minimal-info__small-image-wrapper">
-            <img className="prj-minimal-info__image" src="http://unsplash.it/800/800?image=937" />
+            <img className="prj-minimal-info__image" src="http://unsplash.it/800/800?image=237" />
           </div>
         </div>
 

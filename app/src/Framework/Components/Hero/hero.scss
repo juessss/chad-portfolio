@@ -32,12 +32,16 @@
             bottom: 35vh;
             max-width: 60rem;
             font-size: $font-size-xxxlarge;
+            left: $gutter-medium;
+            right: $gutter-medium;
         }
     }
 
     @media only screen and (min-width: $large) {
         &__title {
             font-size: $font-size-super;
+            left: $gutter-large;
+            right: $gutter-large;
         }
     }
 }

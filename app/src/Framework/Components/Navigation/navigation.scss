@@ -26,10 +26,5 @@
         bottom: 0;
         opacity: 1;
     }
-
-    @media only screen and (min-width: $max-width) {
-        left: 50%;
-        margin-left: ($max-width / 2);
-        right: auto;
-    }
+    
 }

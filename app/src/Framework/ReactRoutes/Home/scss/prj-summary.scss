@@ -1,9 +1,6 @@
 @import "../../../../Style/rules/index";
 
 .prj-summary {
-    $component-spacing: $baseline * 2;
-    $component-spacing-small: $baseline * 3;
-    $component-spacing-medium: $baseline * 6;
 
     &__lead {
         background-color: $white;

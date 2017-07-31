@@ -1,0 +1,70 @@
+@import '../../../../Style/rules/index';
+
+.prj-minimal-info {
+
+    &__text {
+        background-color: $lightergrey;
+        font-size: $body-font-base;
+        line-height: line-height($body-font-base);
+        padding: $component-spacing-small $gutter-base;
+    }
+
+    &__text-title {
+        font-weight: bold;
+        margin-bottom: $baseline;
+    }
+
+    @media only screen and (min-width: $small) {
+        &__text {
+            padding: $component-spacing-small $gutter-small;
+        }
+    }
+
+    @media only screen and (min-width: $medium) {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 100vh;
+
+        &__text {
+            align-items: flex-start;
+            display: flex;
+            flex-direction: column;
+            font-size: $body-font-medium;
+            height: 50vh;
+            justify-content: center;
+            line-height: line-height($body-font-medium);
+            padding: 0 $gutter-medium;
+            width: (100% / 3);
+        }
+
+        &__main-image-wrapper {
+            height: 100vh;
+            order: 2;
+            position: relative;
+            width: (100% / 3 * 2);
+        }
+
+        &__small-image-wrapper {
+            height: 50vh;
+            position: relative;
+            width: (100% / 3);
+        }
+
+        &__image {
+            height: 100%;
+            left: 0;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+    }
+
+    @media only screen and (min-width: $large) {
+        &__text {
+            padding-left: $gutter-large;
+            padding-right: $gutter-large;
+        }
+    }
+}
