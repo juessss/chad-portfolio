@@ -16,7 +16,7 @@
     padding-top: $baseline * 5;
     position: relative;
     width: 100%;
-    
+
     &__image {
         height: 100%;
         left: 0;
@@ -26,7 +26,7 @@
         top: 0;
         width: 100%;
     }
-    
+
     &__title {
         font-size: $font-size-medium;
         line-height: line-height($font-size-medium);
@@ -34,45 +34,53 @@
         padding-bottom: $baseline;
         position: relative;
     }
-    
+
      &__blurb {
         font-size: $font-size-xxsmall;
         line-height: line-height($font-size-xxsmall);
         padding-bottom: $baseline;
         position: relative;
     }
-    
+
     &__subtitle {
         line-height: line-height($font-size-xxsmall);
         font-size: $font-size-xxsmall;
         position: relative;
     }
-    
+
+    &__link {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
     @media (min-width: $medium) {
         padding-left: $gutter-medium;
         padding-right: $gutter-medium;
-        
+
         &__title {
             font-size: $font-size-large;
             line-height: line-height($font-size-large);
         }
-        
+
         &__subtitle,
         &__blurb {
             font-size: $font-size-xsmall;
             line-height: line-height($font-size-xsmall);
         }
     }
-    
+
     @media (min-width: $large) {
         padding-bottom: $baseline * 5;
-        
+
         &__title {
             line-height: line-height($font-size-xlarge);
             font-size: $font-size-xlarge;
         }
     }
-    
+
     @media (min-width: $x-large) {
         padding-right: 8rem;
     }

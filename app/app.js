@@ -14,28 +14,30 @@ import Project from './src/Framework/ReactRoutes/Projects/project.js';
 import Navigation from './src/Framework/Components/Navigation';
 
 class App extends Component {
-  
+
   render() {
-    
+
     return (
       <Router>
           <div>
-            
-            <div className="logo">
-                logo
-            </div>
-            
+
+            <Link to="">
+                <div className="logo">
+                    logo
+                </div>
+            </Link>
+
             <Navigation></Navigation>
-            
+
             <Route key="home" exact path="/" component={ProjectsRoute}/>
             <Route key="about" exact path="/About" component={AboutPage}/>
             <Route key="contact" exact path="/Contact" component={ContactPage}/>
             <Route key="project" exact path="/project/:id" component={Project}/>
-            
+
           </div>
       </Router>
     )
-    
+
   }
 }
 
