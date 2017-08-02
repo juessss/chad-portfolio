@@ -118,6 +118,15 @@ const Project = () => {
             </ul>
           </div>
         </div>
+        
+        <div className="prj-dual-hero">
+          <div className="prj-dual-hero__image-wrapper">
+            <img className="prj-dual-hero__image" src="//unsplash.it/800/800?image=123" />
+          </div>
+          <div className="prj-dual-hero__image-wrapper">
+            <img className="prj-dual-hero__image" src="//unsplash.it/800/800?image=234" />
+          </div>
+        </div>
 
         <Hero></Hero>
 
@@ -134,6 +143,33 @@ const Project = () => {
         </div>
 
         <ImageGallery></ImageGallery>
+        
+        <div className="prj-slider">
+          <div className="prj-slider__blurb">
+            
+          </div>
+          <div className="prj-slider__slide">
+            <div class="slider">
+              <ol class="slider__slider">
+                <li class="slider__slide">
+                    <img src="http://unsplash.it/1200/500" />
+                </li>
+                <li class="slider__slide">
+                    <img src="http://unsplash.it/1200/500?image=123" />
+                </li>
+                <li class="slider__slide">
+                    <img src="http://unsplash.it/1200/500?image=173" />
+                </li>
+                <li class="slider__slide">
+                    <img src="http://unsplash.it/1200/500?image=143" />
+                </li>
+                <li class="slider__slide">
+                    <img src="http://unsplash.it/1200/500?image=423" />
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
 
         <Hero></Hero>
       </div>
