@@ -1,1 +1,969 @@
-!function(){"use strict";var e="undefined"==typeof global?self:global;if("function"!=typeof e.require){var t={},a={},r={},n={}.hasOwnProperty,l=/^\.\.?(\/|$)/,i=function(e,t){for(var a,r=[],n=(l.test(t)?e+"/"+t:t).split("/"),i=0,o=n.length;i<o;i++)a=n[i],".."===a?r.pop():"."!==a&&""!==a&&r.push(a);return r.join("/")},o=function(e){return e.split("/").slice(0,-1).join("/")},m=function(t){return function(a){var r=i(o(t),a);return e.require(r,t)}},c=function(e,t){var r=g&&g.createHot(e),n={id:e,exports:{},hot:r};return a[e]=n,t(n.exports,m(e),n),n.exports},s=function(e){return r[e]?s(r[e]):e},u=function(e,t){return s(i(o(e),t))},f=function(e,r){null==r&&(r="/");var l=s(e);if(n.call(a,l))return a[l].exports;if(n.call(t,l))return c(l,t[l]);throw new Error("Cannot find module '"+e+"' from '"+r+"'")};f.alias=function(e,t){r[t]=e};var d=/\.[^.\/]+$/,p=/\/index(\.[^\/]+)?$/,_=function(e){if(d.test(e)){var t=e.replace(d,"");n.call(r,t)&&r[t].replace(d,"")!==t+"/index"||(r[t]=e)}if(p.test(e)){var a=e.replace(p,"");n.call(r,a)||(r[a]=e)}};f.register=f.define=function(e,r){if(e&&"object"==typeof e)for(var l in e)n.call(e,l)&&f.register(l,e[l]);else t[e]=r,delete a[e],_(e)},f.list=function(){var e=[];for(var a in t)n.call(t,a)&&e.push(a);return e};var g=e._hmr&&new e._hmr(u,f,t,a);f._cache=a,f.hmr=g&&g.wrap,f.brunch=!0,e.require=f}}(),function(){var e;"undefined"==typeof window?this:window;require.register("app.js",function(e,t,a){"use strict";function r(e){return e&&e.__esModule?e:{"default":e}}function n(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function l(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t}function i(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)}var o=function(){function e(e,t){for(var a=0;a<t.length;a++){var r=t[a];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}return function(t,a,r){return a&&e(t.prototype,a),r&&e(t,r),t}}(),m=t("react"),c=r(m),s=t("react-dom"),u=r(s),f=t("react-transition-group/CSSTransitionGroup"),d=(r(f),t("react-router-dom")),p=t("./src/Framework/ReactRoutes/Home"),_=r(p),g=t("./src/Framework/ReactRoutes/About"),E=r(g),h=t("./src/Framework/ReactRoutes/Contact"),v=r(h),y=t("./src/Framework/ReactRoutes/Home/project.js"),b=r(y),N=t("./src/Framework/Components/Navigation"),j=r(N),w=function(e){function t(){return n(this,t),l(this,(t.__proto__||Object.getPrototypeOf(t)).apply(this,arguments))}return i(t,e),o(t,[{key:"render",value:function(){return c["default"].createElement(d.BrowserRouter,null,c["default"].createElement("div",{className:"page"},c["default"].createElement(d.Link,{to:""},c["default"].createElement("div",{className:"logo"},"logo")),c["default"].createElement(j["default"],null),c["default"].createElement(d.Route,{key:"home",exact:!0,path:"/",component:_["default"]}),c["default"].createElement(d.Route,{key:"about",exact:!0,path:"/About",component:E["default"]}),c["default"].createElement(d.Route,{key:"contact",exact:!0,path:"/Contact",component:v["default"]}),c["default"].createElement(d.Route,{key:"project",exact:!0,path:"/project/:id",component:b["default"]})))}}]),t}(m.Component);u["default"].render(c["default"].createElement(w,null),document.getElementById("root"))}),require.register("src/Framework/Components/Hero/hero.js",function(e,t,a){"use strict";function r(e){return e&&e.__esModule?e:{"default":e}}function n(){return i["default"].createElement("div",{className:"hero"},i["default"].createElement("img",{className:"hero__image",src:"http://unsplash.it/2000/2000?image=902"}),i["default"].createElement("h1",{className:"hero__title"},"Hero title goes here"))}Object.defineProperty(e,"__esModule",{value:!0}),e["default"]=n;var l=t("react"),i=r(l)}),require.register("src/Framework/Components/Image-Gallery/imagegallery.js",function(e,t,a){"use strict";function r(e){return e&&e.__esModule?e:{"default":e}}Object.defineProperty(e,"__esModule",{value:!0}),e["default"]=function(){return l["default"].createElement("div",{className:"image-gallery"},l["default"].createElement("div",{className:"image-gallery__item"},l["default"].createElement("img",{className:"minimal-info__image",src:"http://unsplash.it/800/800?image=777"})),l["default"].createElement("div",{className:"image-gallery__item"},l["default"].createElement("img",{className:"minimal-info__image",src:"http://unsplash.it/800/800?image=777"})),l["default"].createElement("div",{className:"image-gallery__item"},l["default"].createElement("img",{className:"minimal-info__image",src:"http://unsplash.it/800/800?image=777"})),l["default"].createElement("div",{className:"image-gallery__item"},l["default"].createElement("img",{className:"minimal-info__image",src:"http://unsplash.it/800/800?image=777"})),l["default"].createElement("div",{className:"image-gallery__item"},l["default"].createElement("img",{className:"minimal-info__image",src:"http://unsplash.it/800/800?image=777"})),l["default"].createElement("div",{className:"image-gallery__item"},l["default"].createElement("img",{className:"minimal-info__image",src:"http://unsplash.it/800/800?image=777"})),l["default"].createElement("div",{className:"image-gallery__item"},l["default"].createElement("img",{className:"minimal-info__image",src:"http://unsplash.it/800/800?image=777"})),l["default"].createElement("div",{className:"image-gallery__item"},l["default"].createElement("img",{className:"minimal-info__image",src:"http://unsplash.it/800/800?image=777"})),l["default"].createElement("div",{className:"image-gallery__item"},l["default"].createElement("img",{className:"minimal-info__image",src:"http://unsplash.it/800/800?image=777"})))};var n=t("react"),l=r(n)}),require.register("src/Framework/Components/Navigation/index.js",function(e,t,a){"use strict";function r(e){return e&&e.__esModule?e:{"default":e}}function n(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function l(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t}function i(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)}Object.defineProperty(e,"__esModule",{value:!0});var o=function(){function e(e,t){for(var a=0;a<t.length;a++){var r=t[a];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}return function(t,a,r){return a&&e(t.prototype,a),r&&e(t,r),t}}(),m=t("react"),c=r(m),s=t("react-router-dom"),u=t("deepcopy"),f=r(u),d=function(e){function t(e){n(this,t);var a=l(this,(t.__proto__||Object.getPrototypeOf(t)).call(this,e));return a.toggleActive=function(e){var t=(0,f["default"])(a.state);t.active=e===!0||e===!1?e:!a.state.active,t.menuClasses=["navigation__menu",t.active?"navigation__menu--active":""],a.setState(t)},a.state={active:!1,menuClasses:[]},a.toggleActive=a.toggleActive.bind(a),a}return i(t,e),o(t,[{key:"componentDidMount",value:function(){this.toggleActive(!1)}},{key:"render",value:function(){return c["default"].createElement("header",{className:"navigation"},c["default"].createElement("div",{className:"navigation__hamburger",onClick:this.toggleActive},c["default"].createElement("div",{className:"hamburger"},c["default"].createElement("div",{className:"hamburger__bar"}))),c["default"].createElement("div",{className:this.state.menuClasses.join(" ")},c["default"].createElement("ul",{className:"menu"},c["default"].createElement("li",{className:"menu__item"},c["default"].createElement(s.Link,{className:"menu__link",to:"/"},"Projects")),c["default"].createElement("li",{className:"menu__item"},c["default"].createElement(s.Link,{className:"menu__link",to:"/about"},"About")),c["default"].createElement("li",{className:"menu__item"},c["default"].createElement(s.Link,{className:"menu__link",to:"/contact"},"Contact")))))}}]),t}(m.Component);e["default"]=d}),require.register("src/Framework/ReactRoutes/About/index.js",function(e,t,a){"use strict";function r(e){return e&&e.__esModule?e:{"default":e}}Object.defineProperty(e,"__esModule",{value:!0});var n=t("react"),l=r(n),i=t("react-transition-group/CSSTransitionGroup"),o=r(i),m=function(){return l["default"].createElement("div",null,l["default"].createElement(o["default"],{transitionName:"example",transitionAppear:!0,transitionAppearTimeout:500,transitionEnterTimeout:500,transitionLeaveTimeout:300},l["default"].createElement("div",null,"ABout Page")))};e["default"]=m}),require.register("src/Framework/ReactRoutes/Contact/index.js",function(e,t,a){"use strict";function r(e){return e&&e.__esModule?e:{"default":e}}Object.defineProperty(e,"__esModule",{value:!0});var n=t("react"),l=r(n),i=t("react-transition-group/CSSTransitionGroup"),o=r(i),m=function(){return l["default"].createElement("div",null,l["default"].createElement(o["default"],{transitionName:"example",transitionAppear:!0,transitionAppearTimeout:500,transitionEnterTimeout:500,transitionLeaveTimeout:300},l["default"].createElement("div",null,"Contact Page")))};e["default"]=m}),require.register("src/Framework/ReactRoutes/Home/index.js",function(e,t,a){"use strict";function r(e){return e&&e.__esModule?e:{"default":e}}function n(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function l(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t}function i(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)}Object.defineProperty(e,"__esModule",{value:!0});var o=function(){function e(e,t){for(var a=0;a<t.length;a++){var r=t[a];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}return function(t,a,r){return a&&e(t.prototype,a),r&&e(t,r),t}}(),m=t("react"),c=r(m),s=t("react-transition-group/CSSTransitionGroup"),u=r(s),f=t("react-router-dom"),d=function(e){function t(e){n(this,t);var a=l(this,(t.__proto__||Object.getPrototypeOf(t)).call(this,e));return a.state={work:[{title:"Barrio Viejo",description:"The best food places in Barcelona were in Borne",client:"Kapacucca",image:"https://8kueag.dm2301.livefilestore.com/y4mHUoTDVS4H9kf3kkbq0x13vqmuGxH1v_C5fqx4LfUAD_1ZWKgupMMd5TNHEbj7OhjcimM263tcPFbmjyViXi5NZqKdSwSAI4507RdawYVbJ99FfjTDY1az0UOMnLCXvQzWWkE9hBWYubmJiDKkko9l6JLe_hf02xZ8dLVgx_18CJ8vbNGlJAQCYt5TY3gEOBeHJiJHeJJbtzYO-N9j_b-2Q?width=1024&height=683&cropmode=none"},{title:"The End of Year Convention",description:"A little mini description describing the project",client:"Client name",image:"https://kcqzgq.dm2301.livefilestore.com/y4m8AT1Mc-IHtm5iUVPHMcChcfn0RgeIdj3JLAUEfrkK8wLYY3dr105XbM309D06MmLJUyj2HGHtDeqTcja8wo7LhA77JxLfSyjzGpz-jpuvcAjag-itw0b7F6fsaM1B3gjSmkJt0vbwYK4KyFrYDPWcrzV7n_uJg-0Kjy2gRqe1RHMduAuVrfh4KLeMX9q0byokxb-wZ4ibsHkKuOrMdMk4A?width=1024&height=684&cropmode=none"},{title:"Work Item",description:"A little mini description describing the project",client:"Client name",image:"https://6v6pmg.dm2301.livefilestore.com/y4mto6Pt5AseMQjB3H8S6HzSNeFJMg1URIutbUnay5dvsGZT4LP2as8zRdi-qQUTtrHaT9GV7v1-nismiT6-5Gf5aREFoTO4-7McFG3kMUJUPMh3-bXwPArEk5n73MabmMJiekQG7IFe3tXGzcPfu15vgLBVtfkBeVvEEQmpK27_S4T6AKI1rtw7Gd9gRBVhQkr0AXXJhg_RxIxQs6e43PMUw?width=4576&height=3056&cropmode=none"}]},a}return i(t,e),o(t,[{key:"componentDidMount",value:function(){}},{key:"render",value:function(){return c["default"].createElement("div",null,c["default"].createElement(u["default"],{transitionName:"example",transitionAppear:!0,transitionAppearTimeout:500,transitionEnterTimeout:500,transitionLeaveTimeout:300},c["default"].createElement("div",{className:"projects"},this.state.work.map(function(e,t){return c["default"].createElement("div",{key:t,className:"projects__item"},c["default"].createElement("div",{className:"project"},c["default"].createElement("img",{className:"project__image",src:e.image}),c["default"].createElement("h2",{className:"project__title"},e.title),c["default"].createElement("p",{className:"project__blurb"},e.description," ",t),c["default"].createElement("span",{className:"project__subtitle"},e.client),c["default"].createElement(f.Link,{to:"./project/"+t,className:"project__link"})))}))))}}]),t}(m.Component);e["default"]=d}),require.register("src/Framework/ReactRoutes/Home/project.js",function(e,t,a){"use strict";function r(e){return e&&e.__esModule?e:{"default":e}}Object.defineProperty(e,"__esModule",{value:!0});var n=t("react"),l=r(n),i=t("../../Components/Hero/hero.js"),o=r(i),m=t("../../Components/Image-Gallery/imagegallery.js"),c=r(m),s=function(){return l["default"].createElement("div",null,l["default"].createElement(o["default"],null),l["default"].createElement("div",{className:"prj-summary"},l["default"].createElement("div",{className:"prj-summary__lead"},l["default"].createElement("span",{className:"prj-summary__lead-text"},"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur")),l["default"].createElement("ul",{className:"prj-summary__meta"},l["default"].createElement("li",{className:"prj-summary__meta-item"},l["default"].createElement("h2",{className:"prj-summary__meta-title"},"Awards & Titles"),l["default"].createElement("p",{className:"prj-summary__meta-text"},"ABC, EFG, LMNOP")),l["default"].createElement("li",{className:"prj-summary__meta-item"},l["default"].createElement("h2",{className:"prj-summary__meta-title"},"Shoutouts"),l["default"].createElement("p",{className:"prj-summary__meta-text"},"Tom, John and Luke")),l["default"].createElement("li",{className:"prj-summary__meta-item"},l["default"].createElement("h2",{className:"prj-summary__meta-title"},"Visit Client"),l["default"].createElement("p",{className:"prj-summary__meta-text"},"www.abc.com")))),l["default"].createElement("div",{className:"prj-minimal-info"},l["default"].createElement("div",{className:"prj-minimal-info__text"},l["default"].createElement("div",{className:"prj-minimal-info__text-title"},"Contextual"),l["default"].createElement("div",{className:"prj-minimal-info__text-content"},"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur")),l["default"].createElement("div",{className:"prj-minimal-info__main-image-wrapper"},l["default"].createElement("img",{className:"prj-minimal-info__image",src:"http://unsplash.it/800/800?image=937"})),l["default"].createElement("div",{className:"prj-minimal-info__small-image-wrapper"},l["default"].createElement("img",{className:"prj-minimal-info__image",src:"http://unsplash.it/800/800?image=237"}))),l["default"].createElement("div",{className:"prj-typography"},l["default"].createElement("div",{className:"prj-typography__item"},l["default"].createElement("h3",{className:"prj-typography__item-header"},"Heading"),l["default"].createElement("span",{className:"prj-typography__item-sub-header"},"Roboto"),l["default"].createElement("div",{className:"prj-typography__item-example"},"Image goes here")),l["default"].createElement("div",{className:"prj-typography__item"},l["default"].createElement("h3",{className:"prj-typography__item-header"},"Heading"),l["default"].createElement("span",{className:"prj-typography__item-sub-header"},"Roboto"),l["default"].createElement("div",{className:"prj-typography__item-example"},"Image goes here")),l["default"].createElement("div",{className:"prj-typography__item"},l["default"].createElement("h3",{className:"prj-typography__item-header"},"Heading"),l["default"].createElement("span",{className:"prj-typography__item-sub-header"},"Roboto"),l["default"].createElement("div",{className:"prj-typography__item-example"},"Image goes here"))),l["default"].createElement("div",{className:"palette-section"},l["default"].createElement("div",{className:"palette-section__blurb"},"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"),l["default"].createElement("div",{className:"palette-section__color-board"},l["default"].createElement("ul",{className:"color-board"},l["default"].createElement("li",{className:"color-board__item"},l["default"].createElement("span",{className:"color-board__item-name"},"Super green"),l["default"].createElement("span",{className:"color-board__item-color"},"#123131")),l["default"].createElement("li",{className:"color-board__item"},l["default"].createElement("span",{className:"color-board__item-name"},"Super green"),l["default"].createElement("span",{className:"color-board__item-color"},"#123131")),l["default"].createElement("li",{className:"color-board__item"},l["default"].createElement("span",{className:"color-board__item-name"},"Super green"),l["default"].createElement("span",{className:"color-board__item-color"},"#123131")),l["default"].createElement("li",{className:"color-board__item"},l["default"].createElement("span",{className:"color-board__item-name"},"Super green"),l["default"].createElement("span",{className:"color-board__item-color"},"#123131")),l["default"].createElement("li",{className:"color-board__item"},l["default"].createElement("span",{className:"color-board__item-name"},"Super green"),l["default"].createElement("span",{className:"color-board__item-color"},"#123131")),l["default"].createElement("li",{className:"color-board__item"},l["default"].createElement("span",{className:"color-board__item-name"},"Super green"),l["default"].createElement("span",{className:"color-board__item-color"},"#123131"))))),l["default"].createElement(o["default"],null),l["default"].createElement("div",{className:"prj-minimal-info"},l["default"].createElement("div",{className:"prj-minimal-info__text"},"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur"),l["default"].createElement("div",{className:"prj-minimal-info__main-image-wrapper"},l["default"].createElement("img",{className:"prj-minimal-info__image",src:"http://unsplash.it/800/800?image=937"})),l["default"].createElement("div",{className:"prj-minimal-info__small-image-wrapper"},l["default"].createElement("img",{className:"prj-minimal-info__image",src:"http://unsplash.it/800/800?image=937"}))),l["default"].createElement(c["default"],null),l["default"].createElement(o["default"],null))};e["default"]=s}),require.alias("buffer/index.js","buffer"),require.alias("process/browser.js","process"),e=require("process"),require.register("___globals___",function(e,t,a){})}(),require("___globals___");
+(function() {
+  'use strict';
+
+  var globals = typeof global === 'undefined' ? self : global;
+  if (typeof globals.require === 'function') return;
+
+  var modules = {};
+  var cache = {};
+  var aliases = {};
+  var has = {}.hasOwnProperty;
+
+  var expRe = /^\.\.?(\/|$)/;
+  var expand = function(root, name) {
+    var results = [], part;
+    var parts = (expRe.test(name) ? root + '/' + name : name).split('/');
+    for (var i = 0, length = parts.length; i < length; i++) {
+      part = parts[i];
+      if (part === '..') {
+        results.pop();
+      } else if (part !== '.' && part !== '') {
+        results.push(part);
+      }
+    }
+    return results.join('/');
+  };
+
+  var dirname = function(path) {
+    return path.split('/').slice(0, -1).join('/');
+  };
+
+  var localRequire = function(path) {
+    return function expanded(name) {
+      var absolute = expand(dirname(path), name);
+      return globals.require(absolute, path);
+    };
+  };
+
+  var initModule = function(name, definition) {
+    var hot = hmr && hmr.createHot(name);
+    var module = {id: name, exports: {}, hot: hot};
+    cache[name] = module;
+    definition(module.exports, localRequire(name), module);
+    return module.exports;
+  };
+
+  var expandAlias = function(name) {
+    return aliases[name] ? expandAlias(aliases[name]) : name;
+  };
+
+  var _resolve = function(name, dep) {
+    return expandAlias(expand(dirname(name), dep));
+  };
+
+  var require = function(name, loaderPath) {
+    if (loaderPath == null) loaderPath = '/';
+    var path = expandAlias(name);
+
+    if (has.call(cache, path)) return cache[path].exports;
+    if (has.call(modules, path)) return initModule(path, modules[path]);
+
+    throw new Error("Cannot find module '" + name + "' from '" + loaderPath + "'");
+  };
+
+  require.alias = function(from, to) {
+    aliases[to] = from;
+  };
+
+  var extRe = /\.[^.\/]+$/;
+  var indexRe = /\/index(\.[^\/]+)?$/;
+  var addExtensions = function(bundle) {
+    if (extRe.test(bundle)) {
+      var alias = bundle.replace(extRe, '');
+      if (!has.call(aliases, alias) || aliases[alias].replace(extRe, '') === alias + '/index') {
+        aliases[alias] = bundle;
+      }
+    }
+
+    if (indexRe.test(bundle)) {
+      var iAlias = bundle.replace(indexRe, '');
+      if (!has.call(aliases, iAlias)) {
+        aliases[iAlias] = bundle;
+      }
+    }
+  };
+
+  require.register = require.define = function(bundle, fn) {
+    if (bundle && typeof bundle === 'object') {
+      for (var key in bundle) {
+        if (has.call(bundle, key)) {
+          require.register(key, bundle[key]);
+        }
+      }
+    } else {
+      modules[bundle] = fn;
+      delete cache[bundle];
+      addExtensions(bundle);
+    }
+  };
+
+  require.list = function() {
+    var list = [];
+    for (var item in modules) {
+      if (has.call(modules, item)) {
+        list.push(item);
+      }
+    }
+    return list;
+  };
+
+  var hmr = globals._hmr && new globals._hmr(_resolve, require, modules, cache);
+  require._cache = cache;
+  require.hmr = hmr && hmr.wrap;
+  require.brunch = true;
+  globals.require = require;
+})();
+
+(function() {
+var global = typeof window === 'undefined' ? this : window;
+var process;
+var __makeRelativeRequire = function(require, mappings, pref) {
+  var none = {};
+  var tryReq = function(name, pref) {
+    var val;
+    try {
+      val = require(pref + '/node_modules/' + name);
+      return val;
+    } catch (e) {
+      if (e.toString().indexOf('Cannot find module') === -1) {
+        throw e;
+      }
+
+      if (pref.indexOf('node_modules') !== -1) {
+        var s = pref.split('/');
+        var i = s.lastIndexOf('node_modules');
+        var newPref = s.slice(0, i).join('/');
+        return tryReq(name, newPref);
+      }
+    }
+    return none;
+  };
+  return function(name) {
+    if (name in mappings) name = mappings[name];
+    if (!name) return;
+    if (name[0] !== '.' && pref) {
+      var val = tryReq(name, pref);
+      if (val !== none) return val;
+    }
+    return require(name);
+  }
+};
+require.register("app.js", function(exports, require, module) {
+'use strict';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = require('react-dom');
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _CSSTransitionGroup = require('react-transition-group/CSSTransitionGroup');
+
+var _CSSTransitionGroup2 = _interopRequireDefault(_CSSTransitionGroup);
+
+var _reactRouterDom = require('react-router-dom');
+
+var _Home = require('./src/Framework/ReactRoutes/Home');
+
+var _Home2 = _interopRequireDefault(_Home);
+
+var _About = require('./src/Framework/ReactRoutes/About');
+
+var _About2 = _interopRequireDefault(_About);
+
+var _Contact = require('./src/Framework/ReactRoutes/Contact');
+
+var _Contact2 = _interopRequireDefault(_Contact);
+
+var _project = require('./src/Framework/ReactRoutes/Home/project.js');
+
+var _project2 = _interopRequireDefault(_project);
+
+var _Navigation = require('./src/Framework/Components/Navigation');
+
+var _Navigation2 = _interopRequireDefault(_Navigation);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var App = function (_Component) {
+  _inherits(App, _Component);
+
+  function App() {
+    _classCallCheck(this, App);
+
+    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
+  }
+
+  _createClass(App, [{
+    key: 'render',
+    value: function render() {
+
+      return _react2.default.createElement(
+        _reactRouterDom.BrowserRouter,
+        null,
+        _react2.default.createElement(
+          'div',
+          { className: 'page' },
+          _react2.default.createElement(
+            _reactRouterDom.Link,
+            { to: '' },
+            _react2.default.createElement(
+              'div',
+              { className: 'logo' },
+              'logo'
+            )
+          ),
+          _react2.default.createElement(_Navigation2.default, null),
+          _react2.default.createElement(_reactRouterDom.Route, { key: 'home', exact: true, path: '/', component: _Home2.default }),
+          _react2.default.createElement(_reactRouterDom.Route, { key: 'about', exact: true, path: '/About', component: _About2.default }),
+          _react2.default.createElement(_reactRouterDom.Route, { key: 'contact', exact: true, path: '/Contact', component: _Contact2.default }),
+          _react2.default.createElement(_reactRouterDom.Route, { key: 'project', exact: true, path: '/project/:id', component: _project2.default })
+        )
+      );
+    }
+  }]);
+
+  return App;
+}(_react.Component);
+
+_reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById('root'));
+
+});
+
+require.register("src/Framework/Components/Hero/hero.js", function(exports, require, module) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+        value: true
+});
+exports.default = Hero;
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Hero() {
+        return _react2.default.createElement(
+                "div",
+                { className: "hero" },
+                _react2.default.createElement("img", { className: "hero__image", src: "http://unsplash.it/2000/2000?image=902" }),
+                _react2.default.createElement(
+                        "h1",
+                        { className: "hero__title" },
+                        "Hero title goes here"
+                )
+        );
+}
+
+});
+
+;require.register("src/Framework/Components/Image-Gallery/imagegallery.js", function(exports, require, module) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = function () {
+  return _react2.default.createElement(
+    "div",
+    { className: "image-gallery" },
+    _react2.default.createElement(
+      "div",
+      { className: "image-gallery__item" },
+      _react2.default.createElement("img", { className: "minimal-info__image", src: "http://unsplash.it/800/800?image=777" })
+    ),
+    _react2.default.createElement(
+      "div",
+      { className: "image-gallery__item" },
+      _react2.default.createElement("img", { className: "minimal-info__image", src: "http://unsplash.it/800/800?image=777" })
+    ),
+    _react2.default.createElement(
+      "div",
+      { className: "image-gallery__item" },
+      _react2.default.createElement("img", { className: "minimal-info__image", src: "http://unsplash.it/800/800?image=777" })
+    ),
+    _react2.default.createElement(
+      "div",
+      { className: "image-gallery__item" },
+      _react2.default.createElement("img", { className: "minimal-info__image", src: "http://unsplash.it/800/800?image=777" })
+    ),
+    _react2.default.createElement(
+      "div",
+      { className: "image-gallery__item" },
+      _react2.default.createElement("img", { className: "minimal-info__image", src: "http://unsplash.it/800/800?image=777" })
+    ),
+    _react2.default.createElement(
+      "div",
+      { className: "image-gallery__item" },
+      _react2.default.createElement("img", { className: "minimal-info__image", src: "http://unsplash.it/800/800?image=777" })
+    ),
+    _react2.default.createElement(
+      "div",
+      { className: "image-gallery__item" },
+      _react2.default.createElement("img", { className: "minimal-info__image", src: "http://unsplash.it/800/800?image=777" })
+    ),
+    _react2.default.createElement(
+      "div",
+      { className: "image-gallery__item" },
+      _react2.default.createElement("img", { className: "minimal-info__image", src: "http://unsplash.it/800/800?image=777" })
+    ),
+    _react2.default.createElement(
+      "div",
+      { className: "image-gallery__item" },
+      _react2.default.createElement("img", { className: "minimal-info__image", src: "http://unsplash.it/800/800?image=777" })
+    )
+  );
+};
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+});
+
+;require.register("src/Framework/Components/Navigation/index.js", function(exports, require, module) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = require('react-router-dom');
+
+var _deepcopy = require('deepcopy');
+
+var _deepcopy2 = _interopRequireDefault(_deepcopy);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Navigation = function (_Component) {
+  _inherits(Navigation, _Component);
+
+  function Navigation(props) {
+    _classCallCheck(this, Navigation);
+
+    var _this = _possibleConstructorReturn(this, (Navigation.__proto__ || Object.getPrototypeOf(Navigation)).call(this, props));
+
+    _this.toggleActive = function (isActive) {
+      var state = (0, _deepcopy2.default)(_this.state);
+      state.active = isActive === true || isActive === false ? isActive : !_this.state.active;
+      state.menuClasses = ['navigation__menu', state.active ? 'navigation__menu--active' : ''];
+      _this.setState(state);
+    };
+
+    _this.state = {
+      active: false,
+      menuClasses: []
+    };
+
+    _this.toggleActive = _this.toggleActive.bind(_this);
+    return _this;
+  }
+
+  _createClass(Navigation, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      this.toggleActive(false);
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'header',
+        { className: 'navigation' },
+        _react2.default.createElement(
+          'div',
+          { className: 'navigation__hamburger', onClick: this.toggleActive },
+          _react2.default.createElement(
+            'div',
+            { className: 'hamburger' },
+            _react2.default.createElement('div', { className: 'hamburger__bar' })
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: this.state.menuClasses.join(' ') },
+          _react2.default.createElement(
+            'ul',
+            { className: 'menu' },
+            _react2.default.createElement(
+              'li',
+              { className: 'menu__item' },
+              _react2.default.createElement(
+                _reactRouterDom.Link,
+                { className: 'menu__link', to: '/' },
+                'Projects'
+              )
+            ),
+            _react2.default.createElement(
+              'li',
+              { className: 'menu__item' },
+              _react2.default.createElement(
+                _reactRouterDom.Link,
+                { className: 'menu__link', to: '/about' },
+                'About'
+              )
+            ),
+            _react2.default.createElement(
+              'li',
+              { className: 'menu__item' },
+              _react2.default.createElement(
+                _reactRouterDom.Link,
+                { className: 'menu__link', to: '/contact' },
+                'Contact'
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return Navigation;
+}(_react.Component);
+
+exports.default = Navigation;
+
+});
+
+require.register("src/Framework/ReactRoutes/About/index.js", function(exports, require, module) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _CSSTransitionGroup = require('react-transition-group/CSSTransitionGroup');
+
+var _CSSTransitionGroup2 = _interopRequireDefault(_CSSTransitionGroup);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var AboutPage = function AboutPage() {
+  return _react2.default.createElement(
+    'div',
+    null,
+    _react2.default.createElement(
+      _CSSTransitionGroup2.default,
+      {
+        transitionName: 'example',
+        transitionAppear: true,
+        transitionAppearTimeout: 500,
+        transitionEnterTimeout: 500,
+        transitionLeaveTimeout: 300 },
+      _react2.default.createElement(
+        'div',
+        null,
+        'ABout Page'
+      )
+    )
+  );
+};
+
+exports.default = AboutPage;
+
+});
+
+require.register("src/Framework/ReactRoutes/Contact/index.js", function(exports, require, module) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _CSSTransitionGroup = require('react-transition-group/CSSTransitionGroup');
+
+var _CSSTransitionGroup2 = _interopRequireDefault(_CSSTransitionGroup);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ContactPage = function ContactPage() {
+  return _react2.default.createElement(
+    'div',
+    null,
+    _react2.default.createElement(
+      _CSSTransitionGroup2.default,
+      {
+        transitionName: 'example',
+        transitionAppear: true,
+        transitionAppearTimeout: 500,
+        transitionEnterTimeout: 500,
+        transitionLeaveTimeout: 300 },
+      _react2.default.createElement(
+        'div',
+        null,
+        'Contact Page'
+      )
+    )
+  );
+};
+
+exports.default = ContactPage;
+
+});
+
+require.register("src/Framework/ReactRoutes/Home/index.js", function(exports, require, module) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _CSSTransitionGroup = require('react-transition-group/CSSTransitionGroup');
+
+var _CSSTransitionGroup2 = _interopRequireDefault(_CSSTransitionGroup);
+
+var _reactRouterDom = require('react-router-dom');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ProjectsRoute = function (_Component) {
+    _inherits(ProjectsRoute, _Component);
+
+    function ProjectsRoute(props) {
+        _classCallCheck(this, ProjectsRoute);
+
+        var _this = _possibleConstructorReturn(this, (ProjectsRoute.__proto__ || Object.getPrototypeOf(ProjectsRoute)).call(this, props));
+
+        _this.state = {
+            work: [{
+                title: 'Barrio Viejo',
+                description: 'The best food places in Barcelona were in Borne',
+                client: 'Kapacucca',
+                image: 'https://8kueag.dm2301.livefilestore.com/y4mHUoTDVS4H9kf3kkbq0x13vqmuGxH1v_C5fqx4LfUAD_1ZWKgupMMd5TNHEbj7OhjcimM263tcPFbmjyViXi5NZqKdSwSAI4507RdawYVbJ99FfjTDY1az0UOMnLCXvQzWWkE9hBWYubmJiDKkko9l6JLe_hf02xZ8dLVgx_18CJ8vbNGlJAQCYt5TY3gEOBeHJiJHeJJbtzYO-N9j_b-2Q?width=1024&height=683&cropmode=none'
+            }, {
+                title: 'The End of Year Convention',
+                description: 'A little mini description describing the project',
+                client: 'Client name',
+                image: 'https://kcqzgq.dm2301.livefilestore.com/y4m8AT1Mc-IHtm5iUVPHMcChcfn0RgeIdj3JLAUEfrkK8wLYY3dr105XbM309D06MmLJUyj2HGHtDeqTcja8wo7LhA77JxLfSyjzGpz-jpuvcAjag-itw0b7F6fsaM1B3gjSmkJt0vbwYK4KyFrYDPWcrzV7n_uJg-0Kjy2gRqe1RHMduAuVrfh4KLeMX9q0byokxb-wZ4ibsHkKuOrMdMk4A?width=1024&height=684&cropmode=none'
+            }, {
+                title: 'Work Item',
+                description: 'A little mini description describing the project',
+                client: 'Client name',
+
+                image: 'https://6v6pmg.dm2301.livefilestore.com/y4mto6Pt5AseMQjB3H8S6HzSNeFJMg1URIutbUnay5dvsGZT4LP2as8zRdi-qQUTtrHaT9GV7v1-nismiT6-5Gf5aREFoTO4-7McFG3kMUJUPMh3-bXwPArEk5n73MabmMJiekQG7IFe3tXGzcPfu15vgLBVtfkBeVvEEQmpK27_S4T6AKI1rtw7Gd9gRBVhQkr0AXXJhg_RxIxQs6e43PMUw?width=4576&height=3056&cropmode=none'
+            }]
+        };
+        return _this;
+    }
+
+    _createClass(ProjectsRoute, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {}
+    }, {
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    _CSSTransitionGroup2.default,
+                    {
+                        transitionName: 'example',
+                        transitionAppear: true,
+                        transitionAppearTimeout: 500,
+                        transitionEnterTimeout: 500,
+                        transitionLeaveTimeout: 300 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'projects' },
+                        this.state.work.map(function (item, index) {
+                            return _react2.default.createElement(
+                                'div',
+                                { key: index, className: 'projects__item' },
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'project' },
+                                    _react2.default.createElement('img', { className: 'project__image', src: item.image }),
+                                    _react2.default.createElement(
+                                        'h2',
+                                        { className: 'project__title' },
+                                        item.title
+                                    ),
+                                    _react2.default.createElement(
+                                        'p',
+                                        { className: 'project__blurb' },
+                                        item.description,
+                                        ' ',
+                                        index
+                                    ),
+                                    _react2.default.createElement(
+                                        'span',
+                                        { className: 'project__subtitle' },
+                                        item.client
+                                    ),
+                                    _react2.default.createElement(_reactRouterDom.Link, { to: './project/' + index, className: 'project__link' })
+                                )
+                            );
+                        })
+                    )
+                )
+            );
+        }
+    }]);
+
+    return ProjectsRoute;
+}(_react.Component);
+
+exports.default = ProjectsRoute;
+
+});
+
+require.register("src/Framework/ReactRoutes/Home/project.js", function(exports, require, module) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _hero = require('../../Components/Hero/hero.js');
+
+var _hero2 = _interopRequireDefault(_hero);
+
+var _imagegallery = require('../../Components/Image-Gallery/imagegallery.js');
+
+var _imagegallery2 = _interopRequireDefault(_imagegallery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Project = function Project() {
+  return _react2.default.createElement(
+    'div',
+    null,
+    _react2.default.createElement(_hero2.default, null),
+    _react2.default.createElement(
+      'div',
+      { className: 'prj-summary' },
+      _react2.default.createElement(
+        'div',
+        { className: 'prj-summary__lead' },
+        _react2.default.createElement(
+          'span',
+          { className: 'prj-summary__lead-text' },
+          'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur'
+        )
+      ),
+      _react2.default.createElement(
+        'ul',
+        { className: 'prj-summary__meta' },
+        _react2.default.createElement(
+          'li',
+          { className: 'prj-summary__meta-item' },
+          _react2.default.createElement(
+            'h2',
+            { className: 'prj-summary__meta-title' },
+            'Awards & Titles'
+          ),
+          _react2.default.createElement(
+            'p',
+            { className: 'prj-summary__meta-text' },
+            'ABC, EFG, LMNOP'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          { className: 'prj-summary__meta-item' },
+          _react2.default.createElement(
+            'h2',
+            { className: 'prj-summary__meta-title' },
+            'Shoutouts'
+          ),
+          _react2.default.createElement(
+            'p',
+            { className: 'prj-summary__meta-text' },
+            'Tom, John and Luke'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          { className: 'prj-summary__meta-item' },
+          _react2.default.createElement(
+            'h2',
+            { className: 'prj-summary__meta-title' },
+            'Visit Client'
+          ),
+          _react2.default.createElement(
+            'p',
+            { className: 'prj-summary__meta-text' },
+            'www.abc.com'
+          )
+        )
+      )
+    ),
+    _react2.default.createElement(
+      'div',
+      { className: 'prj-minimal-info' },
+      _react2.default.createElement(
+        'div',
+        { className: 'prj-minimal-info__text' },
+        _react2.default.createElement(
+          'div',
+          { className: 'prj-minimal-info__text-title' },
+          'Contextual'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'prj-minimal-info__text-content' },
+          'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur'
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'prj-minimal-info__main-image-wrapper' },
+        _react2.default.createElement('img', { className: 'prj-minimal-info__image', src: 'http://unsplash.it/800/800?image=937' })
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'prj-minimal-info__small-image-wrapper' },
+        _react2.default.createElement('img', { className: 'prj-minimal-info__image', src: 'http://unsplash.it/800/800?image=237' })
+      )
+    ),
+    _react2.default.createElement(
+      'div',
+      { className: 'prj-typography' },
+      _react2.default.createElement(
+        'div',
+        { className: 'prj-typography__item' },
+        _react2.default.createElement(
+          'h3',
+          { className: 'prj-typography__item-header' },
+          'Heading'
+        ),
+        _react2.default.createElement(
+          'span',
+          { className: 'prj-typography__item-sub-header' },
+          'Roboto'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'prj-typography__item-example' },
+          'Image goes here'
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'prj-typography__item' },
+        _react2.default.createElement(
+          'h3',
+          { className: 'prj-typography__item-header' },
+          'Heading'
+        ),
+        _react2.default.createElement(
+          'span',
+          { className: 'prj-typography__item-sub-header' },
+          'Roboto'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'prj-typography__item-example' },
+          'Image goes here'
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'prj-typography__item' },
+        _react2.default.createElement(
+          'h3',
+          { className: 'prj-typography__item-header' },
+          'Heading'
+        ),
+        _react2.default.createElement(
+          'span',
+          { className: 'prj-typography__item-sub-header' },
+          'Roboto'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'prj-typography__item-example' },
+          'Image goes here'
+        )
+      )
+    ),
+    _react2.default.createElement(
+      'div',
+      { className: 'palette-section' },
+      _react2.default.createElement(
+        'div',
+        { className: 'palette-section__blurb' },
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'palette-section__color-board' },
+        _react2.default.createElement(
+          'ul',
+          { className: 'color-board' },
+          _react2.default.createElement(
+            'li',
+            { className: 'color-board__item' },
+            _react2.default.createElement(
+              'span',
+              { className: 'color-board__item-name' },
+              'Super green'
+            ),
+            _react2.default.createElement(
+              'span',
+              { className: 'color-board__item-color' },
+              '#123131'
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            { className: 'color-board__item' },
+            _react2.default.createElement(
+              'span',
+              { className: 'color-board__item-name' },
+              'Super green'
+            ),
+            _react2.default.createElement(
+              'span',
+              { className: 'color-board__item-color' },
+              '#123131'
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            { className: 'color-board__item' },
+            _react2.default.createElement(
+              'span',
+              { className: 'color-board__item-name' },
+              'Super green'
+            ),
+            _react2.default.createElement(
+              'span',
+              { className: 'color-board__item-color' },
+              '#123131'
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            { className: 'color-board__item' },
+            _react2.default.createElement(
+              'span',
+              { className: 'color-board__item-name' },
+              'Super green'
+            ),
+            _react2.default.createElement(
+              'span',
+              { className: 'color-board__item-color' },
+              '#123131'
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            { className: 'color-board__item' },
+            _react2.default.createElement(
+              'span',
+              { className: 'color-board__item-name' },
+              'Super green'
+            ),
+            _react2.default.createElement(
+              'span',
+              { className: 'color-board__item-color' },
+              '#123131'
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            { className: 'color-board__item' },
+            _react2.default.createElement(
+              'span',
+              { className: 'color-board__item-name' },
+              'Super green'
+            ),
+            _react2.default.createElement(
+              'span',
+              { className: 'color-board__item-color' },
+              '#123131'
+            )
+          )
+        )
+      )
+    ),
+    _react2.default.createElement(_hero2.default, null),
+    _react2.default.createElement(
+      'div',
+      { className: 'prj-minimal-info' },
+      _react2.default.createElement(
+        'div',
+        { className: 'prj-minimal-info__text' },
+        'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur'
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'prj-minimal-info__main-image-wrapper' },
+        _react2.default.createElement('img', { className: 'prj-minimal-info__image', src: 'http://unsplash.it/800/800?image=937' })
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'prj-minimal-info__small-image-wrapper' },
+        _react2.default.createElement('img', { className: 'prj-minimal-info__image', src: 'http://unsplash.it/800/800?image=937' })
+      )
+    ),
+    _react2.default.createElement(_imagegallery2.default, null),
+    _react2.default.createElement(_hero2.default, null)
+  );
+};
+
+exports.default = Project;
+
+});
+
+require.alias("buffer/index.js", "buffer");
+require.alias("process/browser.js", "process");process = require('process');require.register("___globals___", function(exports, require, module) {
+  
+});})();require('___globals___');
+
+
+//# sourceMappingURL=app.js.map
