@@ -60,7 +60,7 @@ class Project extends Component {
             </div>
           </div>
   
-          <div className="prj-typography">
+          <div className="prj-typography" style={{display: 'none'}}>
             <div className="prj-typography__item">
               <h3 className="prj-typography__item-header">
                 Heading
@@ -96,7 +96,7 @@ class Project extends Component {
             </div>
           </div>
   
-          <div className="palette-section">
+          <div className="palette-section" style={{display: 'none'}}>
             <div className="palette-section__blurb">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
             </div>
@@ -153,9 +153,9 @@ class Project extends Component {
             </div>
           </div>
   
-          <ImageGallery></ImageGallery>
+          <ImageGallery style={{display: 'none'}}></ImageGallery>
           
-          <div className="prj-slider">
+          <div className="prj-slider" style={{display: 'none'}}>
             <div className="prj-slider__blurb">
               Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
             </div>
