@@ -1,0 +1,5 @@
+@import '../../../../../../node_modules/jgb-slider/src/scss/slider';
+
+.slider {
+    @include slider(#ffffff);
+}
