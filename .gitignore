@@ -23,4 +23,7 @@ Thumbs.db
 node_modules/
 
 # Brunch output folder.
-public/
+public/*
+
+#Netlify
+!public/_redirects
