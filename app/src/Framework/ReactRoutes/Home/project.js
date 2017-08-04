@@ -53,10 +53,10 @@ class Project extends Component {
               </div>
             </div>
             <div className="prj-minimal-info__main-image-wrapper">
-              <img className="prj-minimal-info__image" src="http://unsplash.it/800/800?image=937" />
+              <img className="prj-minimal-info__image" src="http://placehold.it/800x800" />
             </div>
             <div className="prj-minimal-info__small-image-wrapper">
-              <img className="prj-minimal-info__image" src="http://unsplash.it/800/800?image=237" />
+              <img className="prj-minimal-info__image" src="http://placehold.it/800x800" />
             </div>
           </div>
   
@@ -132,10 +132,10 @@ class Project extends Component {
           
           <div className="prj-dual-hero">
             <div className="prj-dual-hero__image-wrapper">
-              <img className="prj-dual-hero__image" src="//unsplash.it/800/800?image=123" />
+              <img className="prj-dual-hero__image" src="https://placeimg.com/1000/1000/arch" />
             </div>
             <div className="prj-dual-hero__image-wrapper">
-              <img className="prj-dual-hero__image" src="//unsplash.it/800/800?image=234" />
+              <img className="prj-dual-hero__image" src="https://placeimg.com/1000/1000/arch" />
             </div>
           </div>
   
@@ -146,10 +146,10 @@ class Project extends Component {
               Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
             </div>
             <div className="prj-minimal-info__main-image-wrapper">
-              <img className="prj-minimal-info__image" src="http://unsplash.it/800/800?image=937" />
+              <img className="prj-minimal-info__image" src="https://placeimg.com/1000/1000/arch" />
             </div>
             <div className="prj-minimal-info__small-image-wrapper">
-              <img className="prj-minimal-info__image" src="http://unsplash.it/800/800?image=937" />
+              <img className="prj-minimal-info__image" src="https://placeimg.com/1000/1000/arch" />
             </div>
           </div>
   
